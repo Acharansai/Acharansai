@@ -5,3 +5,11 @@ resource "aws_instance" "name" {
     name = "Docker"
   }
 }
+
+terraform {
+  backend "s3" {
+    bucket = "terraform-state-charan"
+    key    = "ec2/terraform.tfstate"
+    region = "ap-south-1"
+  }
+}
