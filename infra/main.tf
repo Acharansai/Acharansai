@@ -10,6 +10,6 @@ terraform {
   backend "s3" {
     bucket = "terraform-state-charan"
     key    = "ec2/terraform.tfstate"
-    region = "ap-south-1"
+    region = "us-east-1"
   }
 }
