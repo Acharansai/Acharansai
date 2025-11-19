@@ -34,5 +34,5 @@ jobs:
       working-directory: infra
 
     - name: Terraform destroy
-      run: terraform apply -auto-approve
+      run: terraform destroy -auto-approve
       working-directory: infra
